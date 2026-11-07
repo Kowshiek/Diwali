@@ -5,6 +5,7 @@ import Diya from './Diya';
 import FireworksCanvas from './FireworksCanvas';
 import confetti from 'canvas-confetti';
 import { diwaliAudio } from '../utils/audioEngine';
+import posterImg from '../assets/couple-poster.jpg';
 
 export default function FinalSurprise({ onRestart, onGoToPoster }) {
   const [toastMessage, setToastMessage] = useState('');
@@ -100,23 +101,33 @@ export default function FinalSurprise({ onRestart, onGoToPoster }) {
           <span className="text-[#FFD700]">✨</span>
         </div>
 
-        {/* Twin Glowing Diyas with Golden Heart Centerpiece */}
-        <div className="relative z-10 flex items-center justify-center gap-3 sm:gap-6 my-2">
+        {/* Twin Glowing Diyas with Golden Couple Medallion */}
+        <div className="relative z-10 flex items-center justify-center gap-2 sm:gap-5 my-2">
           <Diya size="sm" glowing={true} />
 
-          {/* Animated Golden Heart */}
+          {/* Animated Golden Heart & Couple Portrait Medallion */}
           <motion.div
             animate={{
-              scale: [1, 1.15, 0.96, 1.12, 1],
+              scale: [1, 1.06, 0.98, 1.05, 1],
             }}
             transition={{
-              duration: 2,
+              duration: 2.5,
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center"
+            onClick={onGoToPoster}
+            className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-gradient-to-tr from-[#AA820A] via-[#FFD700] to-[#FFF4DF] shadow-xl shadow-[#D4AF37]/50 cursor-pointer"
           >
-            <Heart className="w-full h-full text-[#FFD700] fill-[#FFD700] filter drop-shadow(0 0 16px rgba(255, 215, 0, 0.8))" />
+            <div className="w-full h-full rounded-full overflow-hidden border-2 border-[#270811] relative">
+              <img
+                src={posterImg}
+                alt="Kowsi & Moulii"
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end justify-center pb-1">
+                <Heart className="w-4 h-4 text-[#FFD700] fill-[#FFD700] filter drop-shadow" />
+              </div>
+            </div>
           </motion.div>
 
           <Diya size="sm" glowing={true} />
