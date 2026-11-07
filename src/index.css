@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #270811;
+    color: #FFF4DF;
+    font-family: 'Cormorant Garamond', 'Cinzel', serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1B050B;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #D4AF37, #AA820A);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FFD700;
+  }
+}
+
+/* Luxury gold text gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF4DF 0%, #FFD700 30%, #D4AF37 70%, #F7E7B0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, #D4AF37, #FFF4DF, #AA820A, #FFD700) 1;
+}
+
+/* Glassmorphism with deep wine tone */
+.glass-maroon {
+  background: rgba(74, 16, 28, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 0 16px rgba(212, 175, 55, 0.1);
+}
+
+.glass-parchment {
+  background: linear-gradient(135deg, rgba(255, 244, 223, 0.95) 0%, rgba(247, 231, 176, 0.92) 100%);
+  backdrop-filter: blur(8px);
+  color: #270811;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.35);
+}
+
+/* Glowing text drop shadow */
+.text-glow-gold {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.text-glow-rose {
+  text-shadow: 0 0 10px rgba(255, 105, 135, 0.7), 0 0 20px rgba(180, 20, 60, 0.4);
+}
+
+/* Golden Box Glow */
+.box-glow-gold {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35), 0 0 50px rgba(212, 175, 55, 0.15);
+}
+
+.box-glow-diya {
+  box-shadow: 0 0 35px rgba(255, 140, 0, 0.45), 0 0 70px rgba(255, 200, 50, 0.2);
+}
+
+/* Indian Rangoli SVG background pattern */
+.bg-rangoli-pattern {
+  background-color: #270811;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(74, 16, 28, 0.8) 0%, rgba(39, 8, 17, 0.98) 100%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4af37' fill-opacity='0.04'%3E%3Cpath d='M40 0 L43 20 L58 5 L48 24 L70 20 L53 33 L79 40 L53 47 L70 60 L48 56 L58 75 L43 60 L40 80 L37 60 L22 75 L32 56 L10 60 L27 47 L1 40 L27 33 L10 20 L32 24 L22 5 L37 20 Z'/%3E%3Ccircle cx='40' cy='40' r='10' fill='none' stroke='%23d4af37' stroke-width='1' stroke-opacity='0.05'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Golden Shimmer Animation for buttons */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.btn-gold-shimmer {
+  background: linear-gradient(90deg, #AA820A 0%, #FFD700 50%, #AA820A 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 3.5s infinite linear;
+}
+
+/* Realistic Diya Flame */
+.diya-flame-container {
+  filter: drop-shadow(0 0 12px rgba(255, 140, 0, 0.85));
+}
