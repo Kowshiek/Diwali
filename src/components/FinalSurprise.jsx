@@ -47,8 +47,8 @@ export default function FinalSurprise({ onRestart, onGoToPoster }) {
   const handleShare = async () => {
     diwaliAudio.playRomanticChime();
     const shareData = {
-      title: 'Kowsi 💛 Moulii – Forever & Always',
-      text: 'Happy Diwali My Love! "Every Diwali, I wish for the same thing... You, Me and A Lifetime Together. ❤️" Kowsi 💛 Moulii',
+      title: 'Kowsi 💛 Mouli – Forever & Always',
+      text: 'Happy Diwali My Love! "Every Diwali, I wish for the same thing... You, Me and A Lifetime Together. ❤️" Kowsi 💛 Mouli',
       url: window.location.href,
     };
 
@@ -121,7 +121,7 @@ export default function FinalSurprise({ onRestart, onGoToPoster }) {
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-[#270811] relative">
               <img
                 src={posterImg}
-                alt="Kowsi & Moulii"
+                alt="Kowsi & Mouli"
                 className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end justify-center pb-1">
@@ -143,14 +143,14 @@ export default function FinalSurprise({ onRestart, onGoToPoster }) {
           HAPPY DIWALI, MY LOVE!
         </motion.h1>
 
-        {/* Names: "Kowsi 💛 Moulii" */}
+        {/* Names: "Kowsi 💛 Mouli" */}
         <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
           className="relative z-10 text-2xl sm:text-4xl font-script text-[#FFF4DF] my-2 filter drop-shadow(0 2px 8px rgba(255,215,0,0.5))"
         >
-          Kowsi 💛 Moulii
+          Kowsi 💛 Mouli
         </motion.div>
 
         {/* Golden Line Separator */}

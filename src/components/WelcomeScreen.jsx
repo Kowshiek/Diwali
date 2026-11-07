@@ -60,7 +60,7 @@ export default function WelcomeScreen({ onNext }) {
         >
           <span className="text-[#FFD700]">🪔</span>
           <span className="text-xs uppercase tracking-[0.25em] text-[#F7E7B0] font-serif">
-            Kowsi 💛 Moulii
+            Kowsi 💛 Mouli
           </span>
           <span className="text-[#FFD700]">🪔</span>
         </motion.div>
@@ -77,7 +77,7 @@ export default function WelcomeScreen({ onNext }) {
           <Diya size="sm" />
         </motion.div>
 
-        {/* Main Heading: "Happy Diwali, My Beautiful Moulii ❤️" */}
+        {/* Main Heading: "Happy Diwali, My Beautiful Mouli ❤️" */}
         <motion.h1
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -86,7 +86,7 @@ export default function WelcomeScreen({ onNext }) {
         >
           Happy Diwali,
           <span className="block font-script text-3xl sm:text-5xl text-[#FFF4DF] font-normal my-1 filter drop-shadow(0 2px 8px rgba(255,215,0,0.4))">
-            My Beautiful Moulii ❤️
+            My Beautiful Mouli ❤️
           </span>
         </motion.h1>
 

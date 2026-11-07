@@ -89,7 +89,7 @@ export default function IntroScreen({ onOpenSurprise }) {
           <span className="w-10 h-[1px] bg-[#D4AF37]/40" />
         </motion.div>
 
-        {/* Text 2: "Someone has something special to tell you, Moulii." */}
+        {/* Text 2: "Someone has something special to tell you, Mouli." */}
         <motion.p
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -98,7 +98,7 @@ export default function IntroScreen({ onOpenSurprise }) {
         >
           Someone has something special to tell you,{' '}
           <span className="font-script text-2xl text-[#FFD700] font-semibold block sm:inline mt-1 sm:mt-0">
-            Moulii.
+            Mouli.
           </span>
         </motion.p>
 

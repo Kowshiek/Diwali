@@ -152,7 +152,7 @@ export default function PromiseScreen({ onNext }) {
                 <span>Promise Sealed In My Heart Forever</span>
               </div>
               <p className="text-[11px] text-[#F7E7B0] font-sans mt-0.5">
-                Kowsi has locked this promise for Moulii ✨
+                Kowsi has locked this promise for Mouli ✨
               </p>
             </motion.div>
           )}

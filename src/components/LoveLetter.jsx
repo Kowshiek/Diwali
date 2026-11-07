@@ -5,7 +5,7 @@ import { diwaliAudio } from '../utils/audioEngine';
 
 export default function LoveLetter({ onNext }) {
   const letterParagraphs = [
-    "My dear Moulii,",
+    "My dear Mouli,",
     "I don't know how to explain how important you are in my life.",
     "You are not just someone I love. You are someone I want beside me in every chapter of my life.",
     "I cannot promise that every day will be perfect. I cannot promise that we will never face problems.",
@@ -115,10 +115,10 @@ export default function LoveLetter({ onNext }) {
           </div>
         </div>
 
-        {/* Letter Heading: "Dear Moulii, ❤️" */}
+        {/* Letter Heading: "Dear Mouli, ❤️" */}
         <div className="mb-6 border-b border-[#270811]/20 pb-3">
           <h1 className="text-3xl sm:text-4xl font-script text-[#4A101C] font-bold">
-            Dear Moulii, ❤️
+            Dear Mouli, ❤️
           </h1>
           <p className="text-[11px] text-[#270811]/60 uppercase tracking-widest font-sans mt-0.5">
             Diwali 2026 • A Promise of Forever
@@ -172,7 +172,7 @@ export default function LoveLetter({ onNext }) {
         <div className="mt-8 pt-4 border-t border-[#270811]/15 flex items-center justify-between">
           <div className="flex items-center gap-1 text-[#8E1E36]">
             <Heart className="w-4 h-4 fill-current" />
-            <span className="text-xs font-script text-lg">Kowsi & Moulii</span>
+            <span className="text-xs font-script text-lg">Kowsi & Mouli</span>
           </div>
           <span className="text-[11px] font-sans text-[#270811]/60 tracking-wider">
             Forever & Always

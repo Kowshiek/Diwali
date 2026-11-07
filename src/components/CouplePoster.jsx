@@ -103,7 +103,7 @@ export default function CouplePoster({ onNext }) {
 
       const link = document.createElement('a');
       link.href = blobUrl;
-      link.download = `Kowsi_Moulii_Diwali_Special_Poster.jpg`;
+      link.download = `Kowsi_Mouli_Diwali_Special_Poster.jpg`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -122,7 +122,7 @@ export default function CouplePoster({ onNext }) {
       // Fallback direct link download
       const link = document.createElement('a');
       link.href = posterSrc;
-      link.download = `Kowsi_Moulii_Diwali_Special_Poster.jpg`;
+      link.download = `Kowsi_Mouli_Diwali_Special_Poster.jpg`;
       link.target = '_blank';
       link.click();
       showToast('Opened poster to save! 💛');
@@ -135,8 +135,8 @@ export default function CouplePoster({ onNext }) {
   const handleShare = async () => {
     diwaliAudio.playRomanticChime();
     const shareData = {
-      title: 'Kowsi 💛 Moulii – Forever & Always',
-      text: 'Happy Diwali My Love! "Every Diwali, Every Tomorrow, Every Lifetime... I Choose YOU." Kowsi 💛 Moulii',
+      title: 'Kowsi 💛 Mouli – Forever & Always',
+      text: 'Happy Diwali My Love! "Every Diwali, Every Tomorrow, Every Lifetime... I Choose YOU." Kowsi 💛 Mouli',
       url: window.location.href,
     };
 
@@ -193,7 +193,7 @@ export default function CouplePoster({ onNext }) {
           Our Special Couple Poster
         </h2>
         <p className="text-xs sm:text-sm text-[#F7E7B0]/80 font-serif mt-1">
-          Kowsi 💛 Moulii • Forever & Always
+          Kowsi 💛 Mouli • Forever & Always
         </p>
       </div>
 
@@ -225,7 +225,7 @@ export default function CouplePoster({ onNext }) {
         >
           <img
             src={posterSrc}
-            alt="Kowsi and Moulii Diwali Couple Poster"
+            alt="Kowsi and Mouli Diwali Couple Poster"
             className="w-full h-full object-cover sm:object-contain transition-transform duration-700 group-hover:scale-102"
           />
 
@@ -427,7 +427,7 @@ export default function CouplePoster({ onNext }) {
             >
               <img
                 src={posterSrc}
-                alt="Kowsi & Moulii Couple Poster Fullscreen"
+                alt="Kowsi & Mouli Couple Poster Fullscreen"
                 className="w-auto h-auto max-h-[80vh] max-w-full rounded-2xl border-2 border-[#D4AF37] object-contain shadow-2xl"
               />
 

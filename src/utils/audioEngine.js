@@ -162,7 +162,7 @@ class DiwaliAudioEngine {
     }, delay);
   }
 
-  // Interactive romantic chime sound when Kowsi & Moulii buttons are clicked!
+  // Interactive romantic chime sound when Kowsi & Mouli buttons are clicked!
   playRomanticChime() {
     this.init();
     if (!this.ctx) return;

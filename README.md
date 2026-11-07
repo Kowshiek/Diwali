@@ -1,10 +1,10 @@
-# 🪔 KOWSI 💛 MOULII – FOREVER & ALWAYS
+# 🪔 KOWSI 💛 MOULI – FOREVER & ALWAYS
 ### *A Magical Diwali Love Surprise Website*
 
 > **"Two Hearts. One Promise. Forever Together."**  
 > *"Among millions of lights, you will always be my favourite light."*
 
-A luxury, cinematic, romantic Diwali surprise web application built for **Moulii** by **Kowsi**, crafted with royal maroon, deep burgundy, and antique gold aesthetics, dynamic fireworks, glowing brass diyas, romantic raga soundscapes, and an interactive couple poster generator.
+A luxury, cinematic, romantic Diwali surprise web application built for **Mouli** by **Kowsi**, crafted with royal maroon, deep burgundy, and antique gold aesthetics, dynamic fireworks, glowing brass diyas, romantic raga soundscapes, and an interactive couple poster generator.
 
 ---
 
@@ -16,13 +16,12 @@ A luxury, cinematic, romantic Diwali surprise web application built for **Moulii
    - *"OPEN YOUR SURPRISE ❤️"* interactive gateway that starts romantic background music upon user interaction.
 
 2. **Page Two – The Diwali Welcome**
-   - *"Happy Diwali, My Beautiful Moulii ❤️"*
+   - *"Happy Diwali, My Beautiful Mouli ❤️"*
    - *"Among millions of lights, you will always be my favourite light."*
    - Real-time Diwali fireworks and floating hearts with interactive tap-to-burst fireworks.
 
 3. **Page Three – Our Special Couple Poster (The Centerpiece)**
-   - Upload Kowsi's photograph & Moulii's photograph with instant live preview.
-   - Option to upload a full custom couple poster.
+   - Display official Kowsi & Mouli Diwali poster with full-screen zoom and download.
    - Preserves photos in browser localStorage so memories stay safe across reloads.
    - Luxury golden ornamental frame with traditional Indian corner mandalas.
    - Tamil love quotes with English translations:
@@ -31,12 +30,12 @@ A luxury, cinematic, romantic Diwali surprise web application built for **Moulii
      - *"நீ என் காதல் மட்டுமல்ல... என் நிம்மதி, என் சந்தோஷம், என் எதிர்காலம்."*
      - *"எத்தனை ஜென்மம் எடுத்தாலும், ஒவ்வொரு முறையும் நான் தேர்ந்தெடுப்பது உன்னை மட்டும்தான்!"*
    - Final quote: *"Every Diwali, Every Tomorrow, Every Lifetime... I Choose YOU."*
-   - Fullscreen zoom viewer, **Save Poster directly to phone gallery** (HD PNG via `html2canvas`), and **Share** (Web Share API).
+   - Fullscreen zoom viewer, **Save Poster directly to phone gallery** (HD PNG/JPG), and **Share** (Web Share API).
 
 4. **Page Four – Letter From My Heart**
    - Vintage royal parchment paper styling with golden wax seal.
    - Realistic typing animation revealing paragraph by paragraph.
-   - *"Dear Moulii, ❤️ ... With all my love, Your Kowsi 💛"*
+   - *"Dear Mouli, ❤️ ... With all my love, Your Kowsi 💛"*
    - Fast-forward and replay options.
 
 5. **Page Five – My Forever Promise**
@@ -47,8 +46,8 @@ A luxury, cinematic, romantic Diwali surprise web application built for **Moulii
 
 6. **Page Six – The Grand Finale**
    - Full-screen celebration with grand Diwali fireworks show.
-   - Golden heart with twin diyas.
-   - *"HAPPY DIWALI, MY LOVE! — Kowsi 💛 Moulii"*
+   - Golden heart with twin diyas and couple medallion.
+   - *"HAPPY DIWALI, MY LOVE! — Kowsi 💛 Mouli"*
    - Replay surprise, save memories, and share love actions.
 
 7. **Audio & Sound System**
@@ -100,7 +99,7 @@ npm run build
 3. Click **"Add New"** > **"Project"** and select `Diwali`.
 4. Keep the default settings (Framework: Vite, Build: `npm run build`, Output: `dist`).
 5. Click **Deploy**!
-6. Share the public URL with Moulii ❤️
+6. Share the public URL with Mouli ❤️
 
 ---
-*Created with all the love in the universe by Kowsi for Moulii ✨💛*
+*Created with all the love in the universe by Kowsi for Mouli ✨💛*
