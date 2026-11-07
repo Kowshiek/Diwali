@@ -9,11 +9,8 @@ import { diwaliAudio } from '../utils/audioEngine';
 import defaultPosterImg from '../assets/couple-poster.jpg';
 
 export default function CouplePoster({ onNext }) {
-  // Main poster source (persisted in localStorage or default to uploaded couple poster)
-  const [posterSrc, setPosterSrc] = useState(() => {
-    return localStorage.getItem('km_custom_poster') || defaultPosterImg;
-  });
-
+  // Main poster source defaults always to the official uploaded couple poster
+  const [posterSrc, setPosterSrc] = useState(defaultPosterImg);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
@@ -71,11 +68,6 @@ export default function CouplePoster({ onNext }) {
       reader.onload = (event) => {
         const dataUrl = event.target.result;
         setPosterSrc(dataUrl);
-        try {
-          localStorage.setItem('km_custom_poster', dataUrl);
-        } catch (err) {
-          console.warn('Storage quota exceeded, photo kept in memory');
-        }
         showToast('Poster updated ✨');
         diwaliAudio.playRomanticChime();
       };
@@ -85,7 +77,6 @@ export default function CouplePoster({ onNext }) {
 
   const handleResetDefault = () => {
     setPosterSrc(defaultPosterImg);
-    localStorage.removeItem('km_custom_poster');
     showToast('Reset to original couple poster 💛');
     diwaliAudio.playRomanticChime();
   };
@@ -215,18 +206,19 @@ export default function CouplePoster({ onNext }) {
           <span className="w-10 h-[1px] bg-gradient-to-l from-transparent to-[#FFD700]" />
         </div>
 
-        {/* Interactive Image Frame with Zoom Prompt */}
+        {/* Interactive Image Frame - Fully uncropped portrait poster */}
         <div 
           onClick={() => {
             diwaliAudio.playRomanticChime();
             setIsFullScreen(true);
           }}
-          className="relative w-full rounded-2xl overflow-hidden border-2 border-[#D4AF37]/80 shadow-2xl group cursor-pointer bg-black/60 aspect-[3/4] max-h-[580px] flex items-center justify-center"
+          className="relative w-full rounded-2xl overflow-hidden border-2 border-[#D4AF37]/80 shadow-2xl group cursor-pointer bg-black/40 flex items-center justify-center"
         >
           <img
             src={posterSrc}
             alt="Kowsi and Mouli Diwali Couple Poster"
-            className="w-full h-full object-cover sm:object-contain transition-transform duration-700 group-hover:scale-102"
+            className="w-full h-auto block rounded-xl transition-transform duration-500 group-hover:scale-[1.01]"
+            loading="eager"
           />
 
           {/* Hover / Tap overlay prompt */}
@@ -406,7 +398,7 @@ export default function CouplePoster({ onNext }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-2 sm:p-4"
+            className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-2 sm:p-4 overflow-y-auto"
           >
             {/* Close Button */}
             <button
@@ -423,12 +415,12 @@ export default function CouplePoster({ onNext }) {
               animate={{ scale: 1 }}
               exit={{ scale: 0.85 }}
               transition={{ type: 'spring', damping: 22 }}
-              className="relative max-w-lg w-full max-h-[85vh] flex flex-col items-center justify-center overflow-hidden"
+              className="relative max-w-lg w-full max-h-[90vh] flex flex-col items-center justify-center my-auto"
             >
               <img
                 src={posterSrc}
                 alt="Kowsi & Mouli Couple Poster Fullscreen"
-                className="w-auto h-auto max-h-[80vh] max-w-full rounded-2xl border-2 border-[#D4AF37] object-contain shadow-2xl"
+                className="w-auto h-auto max-h-[82vh] max-w-full rounded-2xl border-2 border-[#D4AF37] object-contain shadow-2xl"
               />
 
               <div className="flex items-center gap-3 mt-3">
